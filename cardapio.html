@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quentinhas do Grau - Cardápio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quentinhas do Grau</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="cardapio">
+        <h2>Cardápio</h2>
+        <div class="menu">
+            <h3>Almoço</h3>
+            <ul>
+                <li>Arroz à grega - R$ 10,00 <button onclick="adicionarAoCarrinho('Arroz à grega', 10.00)">Adicionar ao Carrinho</button></li>
+                <li>Feijão preto - R$ 8,00 <button onclick="adicionarAoCarrinho('Feijão preto', 8.00)">Adicionar ao Carrinho</button></li>
+                <li>Frango grelhado - R$ 12,00 <button onclick="adicionarAoCarrinho('Frango grelhado', 12.00)">Adicionar ao Carrinho</button></li>
+                <li>Bife acebolado - R$ 15,00 <button onclick="adicionarAoCarrinho('Bife acebolado', 15.00)">Adicionar ao Carrinho</button></li>
+                <li>Legumes salteados - R$ 9,00 <button onclick="adicionarAoCarrinho('Legumes salteados', 9.00)">Adicionar ao Carrinho</button></li>
+                <li>Salada de folhas - R$ 7,00 <button onclick="adicionarAoCarrinho('Salada de folhas', 7.00)">Adicionar ao Carrinho</button></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <h3>Jantar</h3>
+            <ul>
+                <li>Lasanha - R$ 20,00 <button onclick="adicionarAoCarrinho('Lasanha', 20.00)">Adicionar ao Carrinho</button></li>
+                <li>Risoto de frango - R$ 22,00 <button onclick="adicionarAoCarrinho('Risoto de frango', 22.00)">Adicionar ao Carrinho</button></li>
+                <li>Polenta frita - R$ 10,00 <button onclick="adicionarAoCarrinho('Polenta frita', 10.00)">Adicionar ao Carrinho</button></li>
+                <li>Omelete recheada - R$ 12,00 <button onclick="adicionarAoCarrinho('Omelete recheada', 12.00)">Adicionar ao Carrinho</button></li>
+                <li>Sopa do dia - R$ 9,00 <button onclick="adicionarAoCarrinho('Sopa do dia', 9.00)">Adicionar ao Carrinho</button></li>
+                <li>Quiche de legumes - R$ 15,00 <button onclick="adicionarAoCarrinho('Quiche de legumes', 15.00)">Adicionar ao Carrinho</button></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <h3>Bebidas</h3>
+            <ul>
+                <li>Suco natural - R$ 5,00 <button onclick="adicionarAoCarrinho('Suco natural', 5.00)">Adicionar ao Carrinho</button></li>
+                <li>Refrigerante - R$ 4,00 <button onclick="adicionarAoCarrinho('Refrigerante', 4.00)">Adicionar ao Carrinho</button></li>
+                <li>Água mineral - R$ 2,00 <button onclick="adicionarAoCarrinho('Água mineral', 2.00)">Adicionar ao Carrinho</button></li>
+                <li>Chá gelado - R$ 6,00 <button onclick="adicionarAoCarrinho('Chá gelado', 6.00)">Adicionar ao Carrinho</button></li>
+                <li>Smoothie de frutas - R$ 8,00 <button onclick="adicionarAoCarrinho('Smoothie de frutas', 8.00)">Adicionar ao Carrinho</button></li>
+                <li>Cerveja artesanal - R$ 12,00 <button onclick="adicionarAoCarrinho('Cerveja artesanal', 12.00)">Adicionar ao Carrinho</button></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <h3>Sobremesas</h3>
+            <ul>
+                <li>Pudim de leite - R$ 6,00 <button onclick="adicionarAoCarrinho('Pudim de leite', 6.00)">Adicionar ao Carrinho</button></li>
+                <li>Bolo de cenoura - R$ 7,00 <button onclick="adicionarAoCarrinho('Bolo de cenoura', 7.00)">Adicionar ao Carrinho</button></li>
+                <li>Frutas da estação - R$ 5,00 <button onclick="adicionarAoCarrinho('Frutas da estação', 5.00)">Adicionar ao Carrinho</button></li>
+                <li>Mousse de chocolate - R$ 9,00 <button onclick="adicionarAoCarrinho('Mousse de chocolate', 9.00)">Adicionar ao Carrinho</button></li>
+                <li>Cocada - R$ 4,00 <button onclick="adicionarAoCarrinho('Cocada', 4.00)">Adicionar ao Carrinho</button></li>
+                <li>Brownie com sorvete - R$ 10,00 <button onclick="adicionarAoCarrinho('Brownie com sorvete', 10.00)">Adicionar ao Carrinho</button></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Quentinhas do Grau. Todos os direitos reservados.</p>
+    </footer>
+
+    <a href="carrinho.html" id="botaoCarrinho">
+        🛒 Quantidade de itens: <span id="quantidadeCarrinho">0</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

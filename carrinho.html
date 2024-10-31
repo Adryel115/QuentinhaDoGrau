@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quentinhas do Grau - Carrinho</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Quentinhas do Grau</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cardapio.html">Cardápio</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <div id="itensCarrinho"></div>
+        <p>Total: R$ <span id="totalCarrinho">0.00</span></p>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+        <button onclick="imprimirNotaFiscal()">Imprimir Nota Fiscal</button>
+        
+    </section>
+    <footer>
+        <p>&copy; 2024 Quentinhas do Grau. Todos os direitos reservados.</p>
+        <p>Caso queira imprimir a nota fiscal, imprima-a antes de finalizar a compra. Agradecemos pela atenção. </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
